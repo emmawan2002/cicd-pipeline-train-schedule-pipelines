@@ -4,7 +4,7 @@ pipeline {
      stage ('Build') {
         steps { 
            echo 'Build the pipeline'
-           sh   './gradlew build'
+           sh   './gradlew build --no-daemon'
         }
      }
   }
